@@ -1,29 +1,31 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const GetStarted = () => {
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setLoading(true);
     // Simulate an async action, like an API call
     setTimeout(() => {
       setLoading(false);
+      navigate("/home");
     }, 2000); // Adjust the duration as needed
   };
 
   return (
-    <div className="bg-red-400 min-h-screen items-center flex justify-center flex-col p-4">
-      <h1 className="mb-3 text-2xl text-center ">
-        WELCOME TO UMOREN VICTOR PORTFOLIO
-      </h1>
+    <div className="custom-pattern bg-cover bg-center min-h-screen flex items-center justify-center text-white flex-col">
+      <h1 className="text-2xl font-semibold mb-2">Welcome to my portfolio</h1>
+
       <button
         onClick={handleClick}
         disabled={loading}
-        className="px-5 bg-gradient-to-r from-blue-600 to-green-800 py-2 flex items-center justify-center rounded-md"
+        className="px-5 bg-gradient-to-r from-blue-600 to-orange-600 py-2 flex items-center justify-center rounded-md"
       >
         {loading ? (
           <svg
-            className="animate-spin h-5 w-5 text-white"
+            className="animate-spin h-10 w-10 text-white"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"

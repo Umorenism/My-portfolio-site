@@ -5,6 +5,7 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { GetStarted } from "./component/GetStarted.tsx";
+import { Home } from "./component/Home.tsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <GetStarted />,
+      },
+      {
+        path: "/home",
+        element: <Home />,
       },
     ],
   },
