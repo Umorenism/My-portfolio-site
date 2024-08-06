@@ -6,6 +6,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { GetStarted } from "./component/GetStarted.tsx";
 import { Home } from "./component/Home.tsx";
+import { Navbar } from "./component/Navbar.tsx";
+import { Footer } from "./component/Footer.tsx";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +21,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/home",
-        element: <Home />,
+
+        element: (
+          <>
+            <Navbar />
+            <Home />
+            <Footer />
+          </>
+        ),
       },
     ],
   },
