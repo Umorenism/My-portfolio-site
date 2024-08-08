@@ -2,7 +2,7 @@ import { FaCss3, FaFigma, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 
 export const MyService = () => {
   return (
-    <div className="mt-4 min-h-[200px] justify-center flex items-center  text-white ">
+    <div className="mt-4 min-h-[200px] bg-video justify-center flex items-center  text-white ">
       <div className="w-full py-16 flex gap-2 p-4 flex-col  px-8 max-w-[1300px] justify-center text-center">
         <h1 className="text-center font-bold text-3xl text-blue-600">
           What i can do

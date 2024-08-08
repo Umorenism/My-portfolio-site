@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className="bg-gradient-to-r from-purple-600 to-sky-900 mt-4 py-16 justify-center flex items-center bg-custom text-white">
+    <div className="bg-gradient-to-r from-sky-400 to-orange-800 mt-4 py-16 justify-center flex items-center bg-custom text-white">
       <div className="w-full py-16 flex gap-2 p-4 flex-col  px-8 max-w-[1300px] justify-center text-center">
         <h1 className="text-center font-bold  text-3xl">About Me</h1>
         <div>
