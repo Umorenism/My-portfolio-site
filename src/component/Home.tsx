@@ -1,19 +1,15 @@
-import { About } from "./About";
-import { Contact } from "./Contact";
-import { Hero } from "./Hero";
-import { MyService } from "./MyService";
-import { Myworks } from "./Myworks";
-import { Testimonial } from "./Testimonial";
+import About from "../pages/About";
+import Hero from "../pages/Hero";
+import Service from "../pages/Service";
 
-export const Home = () => {
+const Home = () => {
   return (
-    <>
+    <div className="mt-20 min-h-screen">
       <Hero />
       <About />
-      <Myworks />
-      <MyService />
-      <Testimonial />
-      <Contact />
-    </>
+      <Service />
+    </div>
   );
 };
+
+export default Home;
